@@ -1,0 +1,265 @@
+
+/*Estilos Generales*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --azulOS: #024059;
+    --azul: #026873;
+    --verdema: #04BF8A;
+    --verdeos: #025940;
+    --verde: #03A64A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+    
+h1 {
+   font-size: 48px;
+}
+
+h2 {
+   font-size: 25px;
+}
+
+h3 {
+   font-size: 25px;
+}
+
+p, a {
+   font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px
+   
+}
+
+
+
+/*Estilos del header*/
+
+.header {
+    color: var(--azulOS);
+    text-align: center;
+    padding: 30px;
+}
+
+/*Estilos del nav*/
+
+.nav a {
+    color: white;
+    font-weight:500;
+    padding: 10px;
+}
+
+.nav a:hover {
+   color: var(--azulOS);
+   background-color: white;
+}
+
+.nav{
+   background-color: var(--azulOS);
+   display: flex;
+   flex-direction: column;
+}
+
+@media(min-width:768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+/*Estilos del banner*/
+
+.banner {
+    background-image: url(/img/pexels-rdne-7092339.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    position:relative
+}
+
+.banner_titulo,
+.bannerubi {
+    color: #ffffff;
+    
+}
+
+.banner_titulo{
+    padding: 30px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.bannerubi {
+    font-weight: 350;
+    
+}
+
+.info_banner {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7 );
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    
+    
+    .banner_titulo {
+        font-size: 45px;
+    }
+
+    .bannerubi {
+        font-size: 30px;
+    }
+}
+
+/*Estilos a los servicios*/
+
+.serviciosapartado {
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: 35px;
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.servicios_servicio {
+    text-align: center;
+}
+
+.serviciotitulo {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.serviciotexto {
+    margin-bottom: 80px;
+    text-align: justify;
+    padding: 0 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@media(min-width:768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .servicioicono {
+        margin-bottom: 12px;
+    }
+}
+
+/*Estilos formulario*/
+
+.formulario {
+    background-color: var(--azulOS);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+   
+}
+
+.form_titulo {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.form_btn button {
+    background-color:#04BF8A;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form_btn {
+text-align: center ;
+}
+
+.form_btn button:hover {
+    background-color: #FF4B33;
+    color: white;
+}
+
+@media (min-width:768px) {
+    .formulario {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/*Footer*/
+
+.footer {
+    
+    background-color: #024059;
+    margin-top: 50px;
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+::placeholder {
+ padding: 0 5px;
+}
+
